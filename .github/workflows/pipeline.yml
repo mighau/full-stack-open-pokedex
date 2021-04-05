@@ -34,3 +34,5 @@ jobs:
           heroku_app_name: 'cicd-app-aajii' #Must be unique in Heroku
           heroku_email: 'a-j.nieminen@hotmail.com'
           healthcheck: 'https://cicd-app-aajii.herokuapp.com/health'
+          checkstring: 'ok'
+          rollbackonhealthcheckfailed: true
