@@ -6,4 +6,9 @@ describe('Pokedex', function () {
       'Pokémon and Pokémon character names are trademarks of Nintendo.'
     );
   });
+  it('particular pokemon can bee accessed from main page', () => {
+    cy.visit('http://localhost:5000');
+    cy.get('a[href*="pokemon/ivysaur"]').click();
+    cy.contains('chlorophyll');
+  });
 });
