@@ -17,4 +17,4 @@ jobs:
           date
       - name: Show directory contents
         run: |
-          ls
+          ls -l
